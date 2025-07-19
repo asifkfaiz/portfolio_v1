@@ -837,7 +837,6 @@ ul {
   gap: 10px;
 }
 .achitems {
-
   z-index: 5;
 }
 .achitem1 {
@@ -857,17 +856,19 @@ ul {
 }
 .achitem3 i {
   font-size: 130px;
-  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white) drop-shadow(0 0 30px white);
-  animation: rotate-gear-alternate 5s ease 0s infinite alternate none; 
+  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white)
+    drop-shadow(0 0 30px white);
+  animation: rotate-gear-alternate 5s ease 0s infinite alternate none;
 }
 .achitem5 i {
   font-size: 130px;
-  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white) drop-shadow(0 0 30px white);
-  animation: rotate-gear-alternate-2 5s ease 0s infinite alternate-reverse none; 
+  filter: drop-shadow(0 0 10px white) drop-shadow(0 0 20px white)
+    drop-shadow(0 0 30px white);
+  animation: rotate-gear-alternate-2 5s ease 0s infinite alternate-reverse none;
 }
 
 .achitem5 {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   grid-area: 4/1/6/2;
@@ -905,8 +906,6 @@ ul {
     transform: rotate(360deg);
   }
 }
-
-
 
 @keyframes rotate-gear-alternate {
   0% {
@@ -1021,7 +1020,6 @@ ul {
   transform: scale(1.03);
 }
 
-
 .ctaproj {
   font-family: "Tabular", sans-serif;
   font-weight: 800;
@@ -1044,3 +1042,486 @@ ul {
   background-color: #b92e35;
   color: #03122f;
 }
+
+/* =================================================================
+                            SKILLS Section
+==================================================================== */
+
+.skills {
+  position: relative;
+  height: 100vh;
+  background-image: url(/portfolio/assets/bg2.png);
+  background-size: cover;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.skills::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20vh;
+  background: linear-gradient(to bottom, black, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.skills::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10vh;
+  background: linear-gradient(to top, black, transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.skills {
+  padding: 100px 50px 20px 50px;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 10px;
+  color: white;
+}
+
+.skitems {
+  z-index: 10;
+}
+.skitem10 {
+  grid-area: 1/1/4/2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  background: linear-gradient(#b92e35, #03122f);
+  border-radius: 60px;
+}
+.skitem10 h1 {
+  letter-spacing: 8px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-weight: 800;
+  background: linear-gradient(#03122f, #b92e35);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 55px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.book {
+  position: relative;
+  border-radius: 10px;
+  width: 150px;
+  height: 180px;
+  background-color: whitesmoke;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000;
+}
+
+.cover {
+  top: 0;
+  position: absolute;
+  background-color: #066e9f;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform-origin: 0;
+  -ms-transform-origin: 0;
+  transform-origin: 0;
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.book:hover .cover {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: rotatey(-80deg);
+  -ms-transform: rotatey(-80deg);
+  transform: rotatey(-80deg);
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.skitems .book .cover img {
+  padding: 10px;
+  color: white;
+  font-size: 100px;
+  filter: drop-shadow(
+    0 0 5px rgba(255, 255, 255, 0.52)
+  ); /* White glow effect */
+}
+
+.book .cover {
+  background: linear-gradient(135deg, #e44d26, #ff8855);
+}
+
+.skitem1,
+.skitem2,
+.skitem3,
+.skitem4,
+.skitem5,
+.skitem6,
+.skitem8,
+.skitem9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #8b2328;
+  border-radius: 20px;
+  transition: border 0.1s ease, transform 0.3s ease;
+}
+
+.skitem1:hover,
+.skitem2:hover,
+.skitem3:hover,
+.skitem4:hover,
+.skitem5:hover,
+.skitem6:hover,
+.skitem8:hover,
+.skitem9:hover {
+  border: 2px solid #8b2328;
+  transform: scale(1.03);
+  cursor: default;
+}
+
+.java .book .cover {
+  background: linear-gradient(135deg, #f89820, #1974b0);
+}
+
+.java .book {
+  background: linear-gradient(135deg, #72450f, #0c3856);
+  color: white;
+}
+
+.java .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.java .book .inside h1 {
+  color: #f89820;
+  font-size: 30px;
+}
+
+.java .book .inside {
+  font-size: 10px;
+}
+.java .book .inside i {
+  margin-left: 5px;
+  color: #ff9d24;
+}
+.java .book .inside .noskill {
+  color: #72450f;
+}
+
+
+
+.cpp .book {
+  color: white;
+  background: linear-gradient(135deg, #001427, #002038); /* C++ */
+}
+.cpp .book .cover {
+  
+  background: linear-gradient(135deg, #01284c, #0062ad); /* C++ */
+}
+.cpp .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.cpp .book .inside h1 {
+  color: #29a9ff;
+  font-size: 30px;
+}
+
+.cpp .book .inside {
+  font-size: 10px;
+}
+.cpp .book .inside i {
+  margin-left: 5px;
+  color: #007ede;
+}
+.cpp .book .inside .noskill {
+  color: #003c6a;
+}
+
+
+
+
+
+
+.html .book {
+  background: linear-gradient(135deg, #481702, #49180c); 
+  color: white;
+}
+
+.html .book .cover {
+  background: linear-gradient(135deg, #842903, #ff582e); 
+}
+.html .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.html .book .inside h1 {
+  color: #ff582e;
+  font-size: 30px;
+}
+
+.html .book .inside {
+  font-size: 10px;
+}
+.html .book .inside i {
+  margin-left: 5px;
+  color: #ff582e;
+}
+.html .book .inside .noskill {
+  color: #99370d;
+}
+
+
+
+
+
+.py .book {
+  background: linear-gradient(135deg, #06355b, #554304); 
+  color: white;
+}
+
+.py .book .cover {
+  background: linear-gradient(135deg, #0e7ad2, #d0a50a); 
+}
+.py .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 10px;
+  margin-left: auto;
+}
+
+.py .book .inside h1 {
+  color: #fccc1b;
+  font-size: 25px;
+}
+
+.py .book .inside {
+  font-size: 10px;
+}
+.py .book .inside i {
+  margin-left: 5px;
+  color: #f6c103;
+}
+.py .book .inside .noskill {
+  color: #947507;
+}
+
+
+
+
+
+.php .book {
+  background: linear-gradient(135deg, #373b4c, #1c2135); 
+  color: white;
+}
+.php .book .cover {
+  background: linear-gradient(135deg, #8892be, #4f5b93);
+}
+.php .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.php .book .inside h1 {
+  color: #899df6;
+  font-size: 30px;
+}
+
+.php .book .inside {
+  font-size: 10px;
+}
+.php .book .inside i {
+  margin-left: 5px;
+  color: #6987ff;
+}
+.php .book .inside .noskill {
+  color: #445390;
+}
+
+
+
+
+
+.css .book {
+  background: linear-gradient(135deg, #0a0e21, #0b1e48); 
+  color: white;
+}
+
+.css .book .cover {
+  background: linear-gradient(135deg, #192554, #2965f1); 
+}
+.css .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.css .book .inside h1 {
+  color: #165ef7;
+  font-size: 30px;
+}
+
+.css .book .inside {
+  font-size: 10px;
+}
+.css .book .inside i {
+  margin-left: 5px;
+  color: #165ef7;
+}
+.css .book .inside .noskill {
+  color: #163c8f;
+}
+
+
+
+
+
+.linux .book {
+  background: linear-gradient(135deg, #191919, #2f2507); 
+  color: white;
+}
+
+.linux .book .cover {
+  background: linear-gradient(135deg, #191919, #fcc624); 
+}
+
+.linux .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.linux .book .inside h1 {
+  color: #e7b216;
+  font-size: 30px;
+}
+
+.linux .book .inside {
+  font-size: 10px;
+}
+.linux .book .inside i {
+  margin-left: 5px;
+  color: #e7b216;
+}
+.linux .book .inside .noskill {
+  color: #886809;
+}
+
+
+
+
+
+
+.cp .book {
+  background: linear-gradient(135deg, #00233d, #1d2834); 
+  color: white;
+}
+.cp .book .cover {
+  background: linear-gradient(135deg, #00599c, #91c6ff);
+}
+
+.cp .book .inside {
+  font-family: "Satoshi", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.cp .book .inside h1 {
+  color: #2c8ef5;
+  font-size: 30px;
+}
+
+.cp .book .inside {
+  font-size: 10px;
+}
+.cp .book .inside i {
+  margin-left: 5px;
+  color: #2c8ef5;
+}
+.cp .book .inside .noskill {
+  color: #577ba2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
