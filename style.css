@@ -386,21 +386,21 @@ ul {
   transform: scale(1.03);
 }
 
-/* Fade in from left */
+
 .item1 {
   animation-name: fadeInLeft;
   animation-delay: 0s;
 }
 
-/* Fade in from bottom */
+
 .item3p1 {
   animation-name: fadeInUp;
   animation-delay: 0s;
 }
 
-/* Fade in from right */
+
 .item3p2 {
-  animation-name: fadeInRight;
+  animation-name: fadeInBottom;
   animation-delay: 0s;
 }
 
@@ -416,7 +416,7 @@ ul {
   }
 }
 
-@keyframes fadeInRight {
+@keyframes fadeInBottom {
   from {
     opacity: 0;
     transform: translateY(50px);
@@ -882,13 +882,13 @@ ul {
     transform: rotate(40deg);
   }
   25% {
-    transform: rotate(20deg); /* reverse nudge */
+    transform: rotate(20deg); 
   }
   35% {
     transform: rotate(60deg);
   }
   45% {
-    transform: rotate(50deg); /* back off again */
+    transform: rotate(50deg); 
   }
   60% {
     transform: rotate(120deg);
@@ -900,7 +900,7 @@ ul {
     transform: rotate(200deg);
   }
   95% {
-    transform: rotate(190deg); /* slight pullback */
+    transform: rotate(190deg); 
   }
   100% {
     transform: rotate(360deg);
@@ -915,19 +915,19 @@ ul {
     transform: rotate(30deg);
   }
   25% {
-    transform: rotate(20deg); /* small reversal */
+    transform: rotate(20deg); 
   }
   40% {
     transform: rotate(90deg);
   }
   50% {
-    transform: rotate(80deg); /* another dip */
+    transform: rotate(80deg); 
   }
   65% {
     transform: rotate(150deg);
   }
   75% {
-    transform: rotate(140deg); /* momentary reverse */
+    transform: rotate(140deg); 
   }
   90% {
     transform: rotate(300deg);
@@ -1120,21 +1120,21 @@ ul {
   width: 150px;
   height: 180px;
   background-color: whitesmoke;
-  -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
-  -webkit-transform: preserve-3d;
-  -ms-transform: preserve-3d;
-  transform: preserve-3d;
+  box-shadow: 1px 1px 12px #000;
+  /* -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d; */
+  transform-style: preserve-3d;
   -webkit-perspective: 2000px;
   perspective: 2000px;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  /* -webkit-box-align: center;
+  -ms-flex-align: center; */
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center; */
   justify-content: center;
   color: #000;
 }
@@ -1154,14 +1154,14 @@ ul {
   transform-origin: 0;
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
+  /* -webkit-box-align: center;
+  -ms-flex-align: center; */
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
+  /* -webkit-box-pack: center;
+  -ms-flex-pack: center; */
   justify-content: center;
 }
 
@@ -1255,10 +1255,10 @@ ul {
 
 .cpp .book {
   color: white;
-  background: linear-gradient(135deg, #001427, #002038); /* C++ */
+  background: linear-gradient(135deg, #001427, #002038); 
 }
 .cpp .book .cover {
-  background: linear-gradient(135deg, #01284c, #0062ad); /* C++ */
+  background: linear-gradient(135deg, #01284c, #0062ad); 
 }
 .cpp .book .inside {
   font-family: "Satoshi", sans-serif;
@@ -1730,7 +1730,6 @@ a {
   opacity: 0.3;
 }
 
-/* Keyframes for melting effect */
 @keyframes melt1 {
   0%,
   100% {
