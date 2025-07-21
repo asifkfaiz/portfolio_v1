@@ -386,18 +386,15 @@ ul {
   transform: scale(1.03);
 }
 
-
 .item1 {
   animation-name: fadeInLeft;
   animation-delay: 0s;
 }
 
-
 .item3p1 {
   animation-name: fadeInUp;
   animation-delay: 0s;
 }
-
 
 .item3p2 {
   animation-name: fadeInBottom;
@@ -882,13 +879,13 @@ ul {
     transform: rotate(40deg);
   }
   25% {
-    transform: rotate(20deg); 
+    transform: rotate(20deg);
   }
   35% {
     transform: rotate(60deg);
   }
   45% {
-    transform: rotate(50deg); 
+    transform: rotate(50deg);
   }
   60% {
     transform: rotate(120deg);
@@ -900,7 +897,7 @@ ul {
     transform: rotate(200deg);
   }
   95% {
-    transform: rotate(190deg); 
+    transform: rotate(190deg);
   }
   100% {
     transform: rotate(360deg);
@@ -915,19 +912,19 @@ ul {
     transform: rotate(30deg);
   }
   25% {
-    transform: rotate(20deg); 
+    transform: rotate(20deg);
   }
   40% {
     transform: rotate(90deg);
   }
   50% {
-    transform: rotate(80deg); 
+    transform: rotate(80deg);
   }
   65% {
     transform: rotate(150deg);
   }
   75% {
-    transform: rotate(140deg); 
+    transform: rotate(140deg);
   }
   90% {
     transform: rotate(300deg);
@@ -1255,10 +1252,10 @@ ul {
 
 .cpp .book {
   color: white;
-  background: linear-gradient(135deg, #001427, #002038); 
+  background: linear-gradient(135deg, #001427, #002038);
 }
 .cpp .book .cover {
-  background: linear-gradient(135deg, #01284c, #0062ad); 
+  background: linear-gradient(135deg, #01284c, #0062ad);
 }
 .cpp .book .inside {
   font-family: "Satoshi", sans-serif;
